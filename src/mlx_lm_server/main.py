@@ -141,7 +141,7 @@ class ModelWorker:
     async def enqueue_request(self, request: CompletionRequest) -> CompletionResponse:
         config = {
             "max_tokens": request.max_tokens,
-            "temperature": request.temperature,
+            "temp": request.temperature,
             "top_p": request.top_p,
             "n": request.n,
         }
